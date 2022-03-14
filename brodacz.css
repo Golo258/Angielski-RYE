@@ -149,7 +149,7 @@ ol.contents__elements > li > ul.contents__format--scissors > li:before {
   content: "✂";
   margin-right: 10px;
 }
-#lessons {
+.lessons {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -168,11 +168,12 @@ ol.contents__elements > li > ul.contents__format--scissors > li:before {
 }
 
 .lesson {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   border: 4px solid rgb(3, 66, 71);
+  margin-bottom: 60px;
 }
 
 .lesson__pattern {
@@ -209,7 +210,7 @@ ul.lesson--use > li:before {
   justify-content: space-around;
 }
 .lesson__fotography {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,5 +226,16 @@ ul.lesson--use > li:before {
   font-weight: 600;
   text-align: center;
   margin-top:40px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+.lesson__fotography--bigger
+{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lesson__fotography--bigger img
+{
+  width: 100%;
 }
