@@ -1,22 +1,22 @@
 body {
-  background-color: rgb(204, 145, 7);
+  background-image: url("Images/wall4.jpg");
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
 }
 .logo {
   font-size: 50px;
   font-weight: 800;
-  color: rgb(126, 6, 6);
+  color: rgb(10, 147, 160);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-top: 50px;
   margin-bottom: 40px;
-  text-shadow: 2px 2px 0 rgb(92, 2, 2), -2px 2px 0 rgb(92, 2, 2),
-    -2px -2px 0 rgb(92, 2, 2), 2px -2px 0 rgb(92, 2, 2);
+  text-shadow: 2px 2px 0 rgb(3, 89, 97), -2px 2px 0 rgb(3, 89, 97),
+    -2px -2px 0 rgb(3, 89, 97), 2px -2px 0 rgb(3, 89, 97);
 }
 nav {
-  background-color: rgb(238, 168, 6);
+  background-color: rgb(35, 199, 214);
   text-align: center;
 }
 .nav__list {
@@ -32,18 +32,18 @@ nav {
   display: inline-block; /* obok siebie są elementy  */
   padding-left: 20px;
   padding-right: 20px;
-  border-right: 3px dashed rgb(189, 117, 2);
+  border-right: 3px dashed rgb(10, 147, 160);
 }
 .nav__list > li:first-child {
-  border-left: 3px dashed rgb(189, 117, 2);
+  border-left: 3px dashed rgb(4, 91, 98);
 }
 .nav__list a {
-  color: rgb(126, 6, 6);
+  color: rgb(4, 113, 122);
   font-weight: 650;
   text-decoration: none; /* bez underlina  */
 }
 .nav__list a:hover {
-  color: rgb(126, 6, 6);
+  color: rgb(5, 106, 116);
   text-decoration: none;
 }
 section {
@@ -54,8 +54,8 @@ section {
   width: 90%;
   text-align: center;
   padding: 0;
-  background-color: rgb(170, 70, 12);
-  border: 3px solid rgb(116, 43, 0);
+  background-color: rgb(10, 147, 160);
+  border: 4px solid rgb(4, 92, 100);
 }
 .section__p--center {
   font-size: 35px;
@@ -75,27 +75,27 @@ section q {
 section h1 {
   font-size: 50px;
   font-weight: 700;
-  color: rgb(63, 10, 10);
+  color: rgb(2, 61, 88);
   margin-bottom: 20px;
-  border: 3px solid rgb(116, 5, 5);
+  border: 3px solid rgb(6, 85, 78);
 }
 .contents__elements h1 {
   font-size: 50px;
   font-weight: 700;
-  color: rgb(63, 10, 10);
+  color: rgb(3, 66, 71);
   margin-bottom: 20px;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(184, 102, 8);
+  background-color: rgb(8, 158, 172);
   width: 85%;
   padding: 5px;
-  border-left: 5px solid rgb(107, 59, 4);
-  border-right: 5px solid rgb(107, 59, 4);
-  border-top: 2px solid rgb(107, 59, 4);
-  border-bottom: 2px solid rgb(107, 59, 4);
+  border-left: 5px solid rgb(3, 124, 63);
+  border-right: 5px solid rgb(3, 124, 63);
+  border-top: 2px solid rgb(3, 124, 63);
+  border-bottom: 2px solid rgb(3, 124, 63);
 }
 
 ol.contents__elements {
@@ -105,7 +105,7 @@ ol.contents__elements {
 ol.contents__elements > li {
   font-size: 40px;
   text-transform: uppercase;
-  color: rgb(90, 4, 4);
+  color: rgb(1, 65, 40);
   font-weight: 800;
   padding: 5px;
   letter-spacing: 2px;
@@ -120,7 +120,7 @@ ol.contents__elements > li > ul {
   margin-top: 10px;
   padding-left: 30px;
   list-style-type: none;
-  color: rgb(201, 214, 11);
+  color: rgb(3, 86, 93);
   margin-bottom: 20px;
 }
 ol.contents__elements > li > ul > li {
@@ -129,23 +129,23 @@ ol.contents__elements > li > ul > li {
 
 ol.contents__elements > li > ul.contents__format--pointer > li:before {
   /* before = co przed danym elementem ma sie znaleźć */
-  color: rgb(241, 146, 30);
+  color: rgb(1, 65, 40);
   content: "➥";
   margin-right: 10px;
 }
 
 ol.contents__elements > li > ul.contents__format--arrow > li:before {
-  color: rgb(241, 146, 30);
+  color: rgb(1, 65, 40);
   content: "➶";
   margin-right: 10px;
 }
 ol.contents__elements > li > ul.contents__format--moon > li:before {
-  color: rgb(241, 146, 30);
+  color: rgb(1, 65, 40);
   content: "☾";
   margin-right: 10px;
 }
 ol.contents__elements > li > ul.contents__format--scissors > li:before {
-  color: rgb(241, 146, 30);
+  color: rgb(1, 65, 40);
   content: "✂";
   margin-right: 10px;
 }
@@ -154,17 +154,17 @@ ol.contents__elements > li > ul.contents__format--scissors > li:before {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  background-color: rgb(230, 182, 24);
-  border: 5px solid brown;
+  background-color: rgb(35, 199, 214);
+  border: 5px solid rgb(3, 66, 71);
 }
 
 .lesson__header {
-  color: rgb(100, 67, 4);
+  color: rgb(3, 66, 71);
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-decoration: underline rgb(57, 61, 2);
+  text-decoration: underline rgb(1, 84, 90);
 }
 
 .lesson {
@@ -172,15 +172,15 @@ ol.contents__elements > li > ul.contents__format--scissors > li:before {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  border: 4px solid brown;
+  border: 4px solid rgb(3, 66, 71);
 }
 
 .lesson__pattern {
   font-weight: 700;
   font-size: 35px;
   text-align: center;
-  border-top: 3px solid rgb(53, 39, 1);
-  border-bottom: 3px solid rgb(53, 39, 1);
+  border-top: 3px solid rgb(3, 66, 71);
+  border-bottom: 3px solid rgb(3, 66, 71);
 }
 
 .lesson__pattern--examples {
@@ -199,7 +199,7 @@ ul.lesson--use {
   list-style-type: none;
 }
 ul.lesson--use > li:before {
-  color: rgb(98, 56, 4);
+  color: rgb(3, 66, 71);
   content: "➶";
 }
 
@@ -219,7 +219,7 @@ ul.lesson--use > li:before {
 }
 
 .lesson__footer {
-  background-color: rgb(221, 141, 12);
+  background-color: rgb(3, 66, 71);
   padding: 15px;
   font-size: 30px;
   font-weight: 600;
