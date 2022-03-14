@@ -8,6 +8,31 @@
     <meta name="author" content="GG" />
     <meta name="description" content="opis strony " />
     <link rel="stylesheet" href="brodacz.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function ($) {
+            $.scrollTo(0); // reset scrolla
+            $('#linkPS').click(function () { $.scrollTo($('#pres_Simple'), 500); });
+            $('#linkPC').click(function () { $.scrollTo($('#pres_Cont'), 500); });
+            $('#linkPP').click(function () { $.scrollTo($('#pres_Perfect'), 500); });
+            $('#linkPastS').click(function () { $.scrollTo($('#past_S'), 500); });
+            $('#linkPastC').click(function () { $.scrollTo($('#past_Cont'), 500); });
+            $('#linkPastP').click(function () { $.scrollTo($('#past_Perf'), 500); });
+            $('#linkFS').click(function () { $.scrollTo($('#future_S'), 500); });
+            $('#linkFC').click(function () { $.scrollTo($('#future_Cont'), 500); });
+            $('#linkFP').click(function () { $.scrollTo($('#future_Perf'), 500); });
+            $('.scrollUp').click(function () { $.scrollTo($('.container'), 1000); });
+        });
+        // pokazanie przycisku podczas przewijania
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) $('.scrollUp').fadeIn();
+            else $('.scrollUp').fadeOut();
+        });
+
+    </script>
 </head>
 
 <body>
@@ -37,19 +62,20 @@
         <div class="container">
             <div id="container container__contents">
                 <ol class="contents__elements">
+                    <a href="#" class="scrollUp"></a>
                     <h1>Spis Treści: </h1>
                     <li>
                         Angielskie Czasy:
                         <ul class="contents__format--pointer">
-                            <li>Present Simple </li>
-                            <li>Present Continues </li>
-                            <li>Present Perfect </li>
-                            <li>Past Simple </li>
-                            <li>Past Continues </li>
-                            <li>Past Perfect </li>
-                            <li>Future Simple </li>
-                            <li>Future Continues </li>
-                            <li>Future Perfect </li>
+                            <li><a id="linkPS" href="#"> Present Simple</a></li>
+                            <li><a id="linkPC" href="#"> Present Continues</a> </li>
+                            <li><a id="linkPP" href="#"> Present Perfect</a> </li>
+                            <li><a id="linkPastS" href="#"> Past Simple</a> </li>
+                            <li><a id="linkPastC" href="#"> Past Continues</a> </li>
+                            <li><a id="linkPastP" href="#">Past Perfect </a> </li>
+                            <li><a id="linkFS" href="#"> Future Simple</a> </li>
+                            <li><a id="linkFC" href="#"> Future Continues</a> </li>
+                            <li><a id="linkFP" href="#"> Future Perfect</a> </li>
                         </ul>
                     </li>
                     <li>
@@ -90,7 +116,7 @@
         <div class="lessons">
             <div class="lesson">
                 <div class="lesson__header">
-                    <h1>Present Simple</h1>
+                    <h1 id="pres_Simple">Present Simple</h1>
                 </div>
                 <div class="lesson__pattern">
                     <p> S+ V<sub>i</sub> +O <br />
@@ -137,7 +163,7 @@
 
             <div class="lesson">
                 <div class="lesson__header">
-                    <h1>Present Continues</h1>
+                    <h1 id="pres_Cont">Present Continues</h1>
                     <div class="lesson__pattern">
                         <p> S+ (to be)+ V<sub>ing</sub> +O <br />
                             Podmiot +(odmienione to be) Czasownik +ing + Reszta zdania </p>
@@ -180,7 +206,7 @@
 
             <div class="lesson">
                 <div class="lesson__header">
-                    <h1>Present Perfect</h1>
+                    <h1 id="pres_Perfect">Present Perfect</h1>
                     <div class="lesson__pattern">
                         <p> S+ have/has + V<sub>III </sub>lub V<sub>-ed</sub> + O <br />
                             Podmiot + have/has Czasownik (3 kolumna)+ed + Reszta zdania </p>
@@ -240,7 +266,7 @@
 
             <div class="lesson">
                 <div class="lesson__header">
-                    <h1>Past Simple</h1>
+                    <h1 id="past_S">Past Simple</h1>
                     <div class="lesson__pattern">
                         <p> S+ V<sub>II</sub>lub V<sub>-ed</sub> + O <br />
                             Podmiot + Czasownik w drugiej formie lub końcówka -ed + Reszta zdania </p>
@@ -282,7 +308,7 @@
                             </ul>
                         </ul>
                     </div>
-                    <div class="lesson__fotography--bigger">
+                    <div class="lesson__fotography">
                         <img src="Images/past_simple2.jpg" alt="Past Simple" />
                     </div>
                 </div>
@@ -298,7 +324,7 @@
             </div>
             <div class="lesson">
                 <div class="lesson__header">
-                    <h1>Past Continues</h1>
+                    <h1 id="past_Cont">Past Continues</h1>
                     <div class="lesson__pattern">
                         <p> S+ was/were + V<sub>ing</sub> + O <br />
                             Podmiot + was/were(czyli to be - II formie) + Czasownik+ing + Reszta Zdania
@@ -357,7 +383,7 @@
             </div>
             <div class="lesson">
                 <div class="lesson__header">
-                    <h1>Past Perfect</h1>
+                    <h1 id="past_Perf">Past Perfect</h1>
                     <div class="lesson__pattern">
                         <p> S+ had + V<sub>III</sub>lub V<sub>-ed</sub> + O <br />
                             Podmiot + Had + Czasownik w III formie + Reszta Zdania
@@ -415,7 +441,7 @@
 
             <div class="lesson">
                 <div class="lesson__header">
-                    <h1>Future Simple</h1>
+                    <h1 id="future_S">Future Simple</h1>
                     <div class="lesson__pattern">
                         <p> S+ will V<sub>I</sub> + O <br />
                             Podmiot + will + Czasownik w pierwszej formie+ Reszta zdania </p>
@@ -475,7 +501,7 @@
 
             <div class="lesson">
                 <div class="lesson__header">
-                    <h1>Future Continues</h1>
+                    <h1 id="future_Cont">Future Continues</h1>
                     <div class="lesson__pattern">
                         <p> S+will be +V <sub>-ing</sub> O <br />
                             Podmiot+ will be + Czasownik z końcówką-ing + Reszta Zdania
@@ -492,7 +518,7 @@
                                     <br />Czy będę cię obserwował?
                                 </li>
                                 <li>(!)I won't be watching you!
-                                    <br />Nie będę cię obserwował! 
+                                    <br />Nie będę cię obserwował!
                                 </li>
                             </details>
                             <br />
@@ -508,11 +534,11 @@
                                 </li>
                             </details>
                             <br />
-                            
+
                         </ul>
                     </div>
                     <div class="lesson__fotography">
-                        <img src="Images/future_cont.jpg.png" alt="future_simple" />
+                        <img src="Images/future_cont.jpg.png" alt="Future Continues" />
                     </div>
                 </div>
 
@@ -522,6 +548,61 @@
                         Tym że zamierzamy, kiedy BĘDZIEMY coś ROBIĆ :O
                         Nie koniecznie skończymy tą czynność.
                         Ale mówimy, że będziemy to robić.
+                    </p>
+                </div>
+            </div>
+            <div class="lesson">
+                <div class="lesson__header">
+                    <h1 id="future_Perf">Future Perfect</h1>
+                    <div class="lesson__pattern">
+                        <p> S+will have/has +V<sub>III</sub> O <br />
+                            Podmiot + will +have/has + Czasownik w III formie +Reszta Zdania
+                    </div>
+                </div>
+                <div class="lesson lesson__container">
+                    <div class="lesson__pattern--examples">
+                        <ul>
+                            <details>
+                                <summary>I will have seen U2 twice,
+                                    <br />by the end of the year.
+                                    <br />Zobaczę U2 dwa razy, do końca tego roku
+                                </summary>
+                                <li>Will I have seen U2 twice, ->-
+                                    <br />Czy zobaczę U2 dwa razy,...?
+                                </li>
+                                <li>I won't have seen U2 twice, ...
+                                    <br />Nie zobaczę U2 dwa razy, ...
+                                </li>
+                            </details>
+                            <br />
+                            <details>
+                                <summary>She will have finished her homework...
+                                    <br />Ona skończy prace domową zanim..
+                                </summary>
+                                <li>Will She have finished her homework ...
+                                    <br />Czy ona skończy swoją prace domową zanim...
+                                </li>
+                                <li>She won't have finished her homework ...
+                                    <br />Ona nie skończy swojej pracy domowej zanim...
+                                </li>
+                            </details>
+                            <br />
+                            <ul class="lesson lesson--use">Często używany razem z:
+                                <li>by the time of sth</li>
+                                <li>by the end of sth</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="lesson__fotography--bigger">
+                        <img src="Images/future_perfect.png" alt="Future Continues" />
+                    </div>
+                </div>
+
+
+                <div class="lesson lesson__footer">
+                    <p>Używa się go kiedy mówimy o: <br />
+                        Czynności, którą mamy zamiar osiągnąć, do jakiegoś momentu w przyszłości.
+                        Rzadko się go używa. Nie musisz się go raczej uczyć :)
                     </p>
                 </div>
             </div>

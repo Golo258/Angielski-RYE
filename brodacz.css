@@ -32,19 +32,40 @@ nav {
   display: inline-block; /* obok siebie są elementy  */
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 30px;
+  font-weight: 700;
   border-right: 3px dashed rgb(10, 147, 160);
 }
 .nav__list > li:first-child {
   border-left: 3px dashed rgb(4, 91, 98);
 }
-.nav__list a {
+.nav__list a:visited {
   color: rgb(4, 113, 122);
   font-weight: 650;
   text-decoration: none; /* bez underlina  */
 }
 .nav__list a:hover {
+  color: rgb(4, 113, 122);
+  text-decoration: underline;
+}
+.nav__list a:active {
   color: rgb(5, 106, 116);
   text-decoration: none;
+}
+.contents__format--pointer a:visited {
+  color: rgb(2, 59, 65);
+  font-weight: 650;
+  text-decoration: none; /* bez underlina  */
+}
+.contents__format--pointer a:hover {
+  color: rgb(1, 42, 46);
+  font-weight: 650;
+  text-decoration: underline; /* bez underlina  */
+}
+.contents__format--pointer a:active {
+  color: rgb(4, 113, 122);
+  font-weight: 650;
+  text-decoration: none; /* bez underlina  */
 }
 section {
   margin-top: 30px;
@@ -67,8 +88,8 @@ section {
   font-weight: 600;
   text-align: justify;
 }
-section q {
-  font-size: 40px;
+.section__p--justify q {
+  font-size: 29px;
   font-weight: 700;
   text-align: center;
 }
@@ -90,7 +111,7 @@ section h1 {
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(8, 158, 172);
-  width: 85%;
+  width: 80%;
   padding: 5px;
   border-left: 5px solid rgb(3, 124, 63);
   border-right: 5px solid rgb(3, 124, 63);
@@ -101,6 +122,7 @@ section h1 {
 ol.contents__elements {
   margin-top: 10px;
   margin-left: 150px;
+  list-style-type:upper-latin ;
 }
 ol.contents__elements > li {
   font-size: 40px;
@@ -153,7 +175,7 @@ ol.contents__elements > li > ul.contents__format--scissors > li:before {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 85%;
   background-color: rgb(35, 199, 214);
   border: 5px solid rgb(3, 66, 71);
 }
@@ -204,7 +226,6 @@ ul.lesson--use > li:before {
   content: "➶";
 }
 
-
 .lesson__container {
   display: flex;
   justify-content: space-around;
@@ -225,17 +246,25 @@ ul.lesson--use > li:before {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
-  margin-top:40px;
+  margin-top: 40px;
   margin-bottom: 60px;
 }
-.lesson__fotography--bigger
-{
-  width: 40%;
+.lesson__fotography--bigger {
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.lesson__fotography--bigger img
-{
+.lesson__fotography--bigger img {
   width: 100%;
+}
+.scrollUp {
+  width: 64px;
+  height: 64px;
+  text-decoration: none;
+  background: url("Images/up.png") no-repeat 0px 0px; /* od lewej krawedzi */
+  position: fixed; /*na stale   */
+  right: 46px;
+  bottom:50px;
+  display: none;
 }
