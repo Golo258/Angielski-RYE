@@ -2,6 +2,7 @@ body {
   background-image: url("Images/wall4.jpg");
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
+  color: black;
 }
 .logo {
   font-size: 50px;
